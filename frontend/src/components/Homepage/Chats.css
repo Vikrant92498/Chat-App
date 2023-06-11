@@ -1,0 +1,4 @@
+.chat_room{
+    overflow: scroll;
+    flex: 1;
+}
