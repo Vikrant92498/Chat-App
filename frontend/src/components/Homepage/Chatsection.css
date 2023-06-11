@@ -12,11 +12,11 @@
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-}
+} 
 .chat_header{
     display: flex;
     justify-content: space-between;
-    background-color: aquamarine;
+    background-color: rgb(172, 127, 255);
 }
 .chat_info{
     margin: 10px;
@@ -24,7 +24,8 @@
 }
 .chat_info > .name> p{
     padding-left: 6px;
-    
+    padding-top: 3px;
+    margin: 0;
     font-size:small;
 }
 

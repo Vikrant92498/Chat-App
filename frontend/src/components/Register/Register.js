@@ -1,9 +1,9 @@
 import './Register.css'
 import axios from 'axios'
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Register = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     username: '',
     password: '',
@@ -61,7 +61,7 @@ const Register = () => {
         />
         <div className="button-container">
           <button type="submit" onClick={handleSubmit}>Register</button>
-          <button type="button" onClick={()=>history.push('/login')}>Login</button>
+          <button type="button" onClick={()=>navigate.push('/login')}>Login</button>
         </div>
       </form>
     </div>

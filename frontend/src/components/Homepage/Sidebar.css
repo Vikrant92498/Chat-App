@@ -68,28 +68,4 @@
     display: none;
   }
   
-  .chat{
-    width: 100%;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #fff;
-    border-bottom: 1px solid rgb(215, 215, 215);
-    display: flex;
-  }
-  .sidebarChat_info{
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  .sidebarChat_info > p{
-    margin: 0;
-    padding: 0;
-    font-size: x-small;
-  }
-  .timestamp{
-    font-size: xx-small;
-    position: absolute;
-    right: 0;
-    padding-right: 8px;
-  }
   

@@ -1,9 +1,9 @@
 import './Login.css'
 import axios from 'axios'
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Login =({setLoginUser})=> {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     username: '',
     password: '',
@@ -25,12 +25,11 @@ const Login =({setLoginUser})=> {
     
 
     if (username && password) {
-      console.log("front")
       axios.post('http://localhost:9000/login', user)
         .then((res) => {
           alert("hello")
           setLoginUser(res.data.user);
-          history.push('/');
+          navigate.push('/');
         }) 
         .catch((error) => {
           console.log("Error:", error);
@@ -56,7 +55,7 @@ const Login =({setLoginUser})=> {
         <input type="submit" onClick={handleSubmit} value="Login" />
       </div>
     </form>
-    <div  className="register-link" onClick={()=>history.push('/register')}>
+    <div  className="register-link" onClick={()=>navigate.push('/register')}>
       Register
     </div>
   </div>
